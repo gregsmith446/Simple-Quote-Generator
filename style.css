@@ -1,0 +1,13 @@
+body {
+    background-color:black;    
+}
+
+.title {
+    font-family: 'Didact Gothic';
+    color: white; 
+}
+
+#quote {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
