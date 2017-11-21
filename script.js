@@ -9,11 +9,17 @@ var quotes = [
     "Boys, you must strive to find your own voice. Because the longer you wait to begin, the less likely you are to find it at all. Thoreau said, 'Most men lead lives of quiet desperation.' Don't be resigned to that. Break out!",
     "'O Captain, my Captain.' Who knows where that comes from? Anybody? Not a clue? It's from a poem by Walt Whitman about Mr. Abraham Lincoln. Now in this class you can either call me Mr. Keating, or if you're slightly more daring, O Captain, my Captain.",
     "Carpe, carpe. Carpe diem. Seize the day, boys. Make your lives extraordinary."
-    ]
+    ];
     
     function showQuote() {
         var randomNumber = Math.floor(Math.random() * (quotes.length));
-        console.log('randomNumber')
-        document.getElementById('quote').innerHTML = quotes[randomNumber];
+        // console.log('randomNumber')
+        document.getElementById('quote').innerHTML = quotes[randomNumber] + "";
     }
-    
+
+function tweetQuote(){
+  var quote = document.getElementById("quote").innerText;
+  var link = "https://twitter.com/share?text=" +
+    encodeURIComponent(quote)
+    window.open(link);
+}

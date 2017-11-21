@@ -11,18 +11,17 @@
     <style></style>
 </head>
 <body>
-    <div class="container-fluid text-center">
+    <div class="container text-center">
         <h1 class="title">Mr. Keating Quote Generator</h1>
-            <!--quote will display here-->
-            <div id="quote"></div>
-        <button class="btn btn-default" onclick="showQuote()">Gimme a New Quote</button>
-                <a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?..."><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    </div>    
-    
-    
-    
+            <!--quote will display here, shows one by default-->
+            <div id="quote">"No matter what anybody tells you, words and ideas can change the world."</div>
+            <!--button gives new quote-->
+            <button class="btn btn-lg" onclick="showQuote()">Gimme a New Quote</button>
+            <!--button tweets quote current on display-->
+            <button class="btn btn-primary btn-lg" id="twitterButton" onclick="tweetQuote()"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this Quote!</button>
+ 
 <script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
